@@ -5,7 +5,7 @@
   "background_page" : "background.html",
   "content_scripts": [
     {
-      "matches": ["http://twitter.com/*"],
+      "matches": ["http://*/*"],
       "js" : ["jquery1.4.2.js", "show_keys.js"]
     }
   ]
