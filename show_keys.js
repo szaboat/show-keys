@@ -39,6 +39,8 @@ $(function(){
 			keyText = 'Space';
 		} else if ( e.which == 190 ) {
 			keyText = '.';
+		} else if ( e.which == 16 ){
+			keyText = 'Shift';			
 		} else {
 			keyText = String.fromCharCode(e.which);
 		}
