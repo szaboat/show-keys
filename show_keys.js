@@ -41,6 +41,12 @@ $(function(){
 			keyText = '.';
 		} else if ( e.which == 16 ){
 			keyText = 'Shift';			
+		}	else if ( e.which == 191 ){
+			keyText = '?';			
+		}	else if ( e.which == 17 ){
+			keyText = 'Ctrl';			
+		} else if ( e.which == 18 ){
+			keyText = 'Alt';			
 		} else {
 			keyText = String.fromCharCode(e.which);
 		}
