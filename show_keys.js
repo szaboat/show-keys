@@ -17,7 +17,7 @@ $(function(){
 		'textShadow': '1px 1px 1px #aaa'});
 	
   $('body').bind('keydown',function(e){ 
-    console.log(e, e.which, String.fromCharCode(e.which));
+    //console.log(e, e.which, e.target , String.fromCharCode(e.which));
 		createKeyTag(e)
 		$('.key').css({
 			'padding':'0 10px',
@@ -47,7 +47,10 @@ $(function(){
 			keyText = 'Ctrl';			
 		} else if ( e.which == 18 ){
 			keyText = 'Alt';			
-		} else {
+		} else if ( $(e.target).attr('type') == 'password' ){
+			keyText = '*';
+		}
+			else {
 			keyText = String.fromCharCode(e.which);
 		}
 	
